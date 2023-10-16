@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Admin Panel</title>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+
+<body>
+    <div id="page_wrapper">
+        <div id="sidenav" class="sidenav">
+            <div class="sidenav_header">
+                <div class="logo_section">
+                    <h3>AlfaParf Milano</h3>
+                </div>
+                <a href="#" class="sidenav_link active">
+                    <i class='bx bx-folder'></i>
+                    <h3>Convenios</h3>
+                </a>
+            </div>
+            <button id="nav_collapse_btn">
+                <i class='bx bxs-chevrons-left'></i>
+            </button>
+        </div>
+        <main>
+            <header>
+                <div class="text">
+                    <h2>Convenios</h2>
+                    <p>Bienvenido Administrador</p>
+
+                    <table>
+                        <thead>
+                            <tr>
+                                <th scope="col" width="100px">Tipo_Convenio</th>
+                                <th scope="col" width="290px">Fecha</th>
+                                <th scope="col">Usuario</th>
+                                <th scope="col" width="70px">Status</th>
+                                <th scope="col" width="70px">Details</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td data-label="type">Viajes</td>
+                                <td data-label="date">18/11/2023</td>
+                                <td data-label="name">Aquiroz</td>
+                                <td data-label="Status" style="position: relative;"><span class="pe"></span>Pendiente
+                                </td>
+                                <td data-label="Action"><i class="fa-solid fa-circle-info"></i>
+                                    <button>
+                                        <i class="fa fa-info" aria-hidden="true"></i>
+                                    </button>
+                                </td>
+                            </tr>
+                            <tr class="active-tr">
+                                <td data-label="Due Date">Muebles</td>
+                                <td data-label="Period">12/02/2023</td>
+                                <td data-label="Amount">lrojas</td>
+                                <td data-label="Amount" style="position: relative;"><span class="de"></span>Aceptado
+                                </td>
+                                <td data-label="Period"><i class="fa-solid fa-circle-info"></i>
+                                    <button>
+                                        <i class="fa fa-info" aria-hidden="true"></i>
+                                    </button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td data-label="Due Date">Comercio</td>
+                                <td data-label="Period">26/08/2023</td>
+                                <td data-label="Amount">shernandez</td>
+                                <td data-label="Amount" style="position: relative;"><span class="re"></span>Rechazado
+                                </td>
+                                <td data-label="Period"><i class="fa-solid fa-circle-info"></i>
+                                    <button>
+                                        <i class="fa fa-info" aria-hidden="true"></i>
+                                    </button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td data-label="Due Date">Viajes</td>
+                                <td data-label="Period">23/01/2023</td>
+                                <td data-label="Amount">emonterrosas</td>
+                                <td data-label="Amount" style="position: relative;"><span class="pe"></span>Pendiente
+                                </td>
+                                <td data-label="Period"><i class="fa-solid fa-circle-info"></i>
+                                    <button>
+                                        <i class="fa fa-info" aria-hidden="true"></i>
+                                    </button>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div>
+                    <button id="theme_switch">
+                        <i class='bx bx-sun'></i>
+                    </button>
+                </div>
+            </header>
+        </main>
+    </div>
+    <script src="js/custom.js"></script>
+</body>
+
+</html>
